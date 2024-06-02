@@ -95,7 +95,7 @@ def tellTime():
 
 def getWeather():
     """Function to get the current weather."""
-    api_key = "401609890a9475afd8b17849fc5443c0" 
+    api_key = "401609890a9475afd8b17849fc5443c0" #paste your whether api key here
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     speak("Please tell me the city name")
     city_name = takeCommand().lower()
@@ -124,7 +124,7 @@ def getWeather():
 
 def getNews():
     """Function to get the latest news headlines."""
-    api_key = "4d7f47550eee45c7b374149b560ef561" 
+    api_key = "4d7f47550eee45c7b374149b560ef561" #paste your news api key here
     base_url = "http://newsapi.org/v2/top-headlines?country=in&apiKey=" + api_key
     response = requests.get(base_url)
     data = response.json()
